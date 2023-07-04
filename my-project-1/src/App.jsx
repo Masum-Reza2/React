@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import PropTypes from 'prop-types'
 import TextForm from './components/TextForm'
 import Alert from './components/Alert'
+import About from './components/About'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
 <Navbar mode={mode} toggleMode={ToggleMode}/>
 <Alert alert = {alert}/>
 <TextForm mode={mode} HandleAlert={HandleAlert}/>
+<About mode={mode}/>
 </>
   )
 }
