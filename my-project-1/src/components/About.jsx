@@ -4,49 +4,11 @@ import PropTypes from 'prop-types'
 
 export default function About(props) {
     return (
-        <>
-        <div className={`container mt-4`}>
-            <h2 className={` mb-4 text-2xl text-center font-bold shadow-md ${props.mode==='black'? 'text-white': 'text-black'} ${props.mode==='black'? 'shadow-blue-200': 'shadow-black'} ${props.mode==='black'? 'myStyle': 'myStyle'}`}>About-Us</h2>
-            <div className={`accordion `} id="accordionExample">
-                <div className={`accordion-item ${props.mode===`black`? `bg-black` : `bg-white`} ${props.mode===`black`? `text-white` : `text-black`}`}>
-                    <h2 className="accordion-header">
-                        <button className={`accordion-button ${props.mode===`black`? `bg-black` : `bg-white`} ${props.mode===`black`? `text-white` : `text-black`}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Accordion Item #1
-                        </button>
-                    </h2>
-                    <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                        <div className={`accordion-body`}>
-                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div className={`accordion-item ${props.mode===`black`? `bg-black` : `bg-white`} ${props.mode===`black`? `text-white` : `text-black`}`}>
-                    <h2 className="accordion-header">
-                        <button className={`accordion-button collapsed ${props.mode===`black`? `bg-black` : `bg-white`} ${props.mode===`black`? `text-white` : `text-black`}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div className={`accordion-body`}>
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-                <div className={`accordion-item ${props.mode===`black`? `bg-black` : `bg-white`} ${props.mode===`black`? `text-white` : `text-black`}`}>
-                    <h2 className="accordion-header">
-                        <button className={`accordion-button collapsed ${props.mode===`black`? `bg-black` : `bg-white`} ${props.mode===`black`? `text-white` : `text-black`}`} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
-                        </button>
-                    </h2>
-                    <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div className={`accordion-body`}>
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            </div>
-        </>
+      <>
+      <div className={` mb-4 text-2xl text-center font-bold shadow-md ${props.mode === 'black' ? 'text-white' : 'text-black'} ${props.mode === 'black' ? 'shadow-blue-200' : 'shadow-black'} ${props.mode === 'black' ? 'myStyle' : 'myStyle'}`}>
+        About-Us
+      </div>
+      <p className={` mb-4 font-bold text-md p-2 ${props.mode === 'black' ? 'text-white' : 'text-black'}  ${props.mode === 'black' ? 'myStyle' : 'myStyle'}`}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni esse reiciendis ad itaque velit, dolor eveniet architecto quo, veritatis est nihil nisi, deserunt corrupti? Beatae vitae sunt sit quod error amet! Dolore nisi explicabo earum, voluptates laudantium nam, distinctio doloribus cumque eveniet deleniti aspernatur fuga consectetur atque tempora placeat expedita doloremque! Dicta laborum aspernatur obcaecati laboriosam, amet nostrum nihil optio voluptates voluptas non quidem nemo doloremque odio odit asperiores mollitia soluta consequatur illo blanditiis provident! Quia, facilis delectus. Facere voluptate accusamus pariatur, atque, numquam cupiditate dolorem voluptates debitis at in illo. Assumenda cumque ducimus asperiores saepe sapiente blanditiis, ut, quia veniam magni ipsa adipisci fugiat doloribus impedit doloremque. Eius, aut. Dolorum quod nobis doloribus eveniet expedita dicta aliquam nesciunt magnam quo cum nulla, culpa ea quas esse libero ipsum deserunt quia minima inventore neque, eius praesentium velit. Cumque, deleniti? Corporis incidunt voluptatum ipsa illum, quod soluta ad itaque, eaque deserunt accusamus dignissimos atque facere asperiores aliquid, cum enim impedit molestias eius ducimus omnis labore vero perspiciatis corrupti delectus! Veritatis quisquam aspernatur corporis laudantium sit! Minima tempore magnam cum deleniti voluptates, officia possimus illum. Repudiandae aspernatur odio officiis facilis, assumenda eveniet obcaecati modi, vero numquam odit facere doloremque maxime, neque quae?</p>
+      </>
     )
 }
