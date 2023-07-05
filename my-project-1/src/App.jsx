@@ -6,12 +6,12 @@ import TextForm from './components/TextForm'
 import Alert from './components/Alert'
 import About from './components/About'
 import User_guide from './components/User_guide'
+import Error from './components/Error'
 
 // react router
 // npm i react-router-dom
 // then import the following
 import { BrowserRouter as Main, Route, Routes } from 'react-router-dom';
-import Error from './components/Error'
 
 
 function App() {
