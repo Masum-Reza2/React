@@ -7,7 +7,11 @@ import Alert from './components/Alert'
 import About from './components/About'
 import User_guide from './components/User_guide'
 
+// react router
+// npm i react-router-dom
+// then import the following
 import { BrowserRouter as Main, Route, Routes } from 'react-router-dom';
+import Error from './components/Error'
 
 
 function App() {
@@ -41,11 +45,12 @@ function App() {
 
         <Navbar mode={mode} toggleMode={ToggleMode} />
         <Alert alert={alert} />
+
         <Routes>
           <Route exact path='/' element={<TextForm mode={mode} HandleAlert={HandleAlert} />} />
           <Route exact path='/about' element={<About mode={mode}/>} />
           <Route exact path='/user_guide' element={<User_guide mode={mode}/>} />
-
+          <Route path='/*' element={<Error mode={mode}/>} />
         </Routes>
 
       </Main>
