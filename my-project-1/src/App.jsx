@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import TextForm from './components/TextForm'
 import Alert from './components/Alert'
 import About from './components/About'
+import User_guide from './components/User_guide'
 
 import { BrowserRouter as Main, Route, Routes } from 'react-router-dom';
 
@@ -43,6 +44,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<TextForm mode={mode} HandleAlert={HandleAlert} />} />
           <Route exact path='/about' element={<About mode={mode}/>} />
+          <Route exact path='/user_guide' element={<User_guide mode={mode}/>} />
 
         </Routes>
 
